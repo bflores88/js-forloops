@@ -210,7 +210,20 @@ Declare a variable named `topQuote` and assign it to a String value of your favo
 Write a function that will iterate through the string value and return the longest word in that quote. Console.log your result.
 */
 
+var topQuote = "Live like there's no tomorrow.";
 
+function findLongestWord(myQuote){
+   var topQuoteSplit = myQuote.split(" ");
+   var longestWord = "";
+      for(var i=0; i<topQuoteSplit.length; i++){
+         if(topQuoteSplit[i].length > longestWord.length){
+            longestWord = topQuoteSplit[i];
+         }
+      }
+   return longestWord;
+}
+
+console.log(findLongestWord(topQuote));
 
 /* 12) Puppet Master
 Declare a variable named `miscStorage` set it's value to be: `[ [], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush' ]`
@@ -228,6 +241,7 @@ Write a function that will capitalize the first letter in each word in the phras
 */
 
 var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way.";
+
 
 /* 14) Sightseeing
 Write a function that will loop through the multi-dimensional array and console.log the city and landmark on separate lines.
