@@ -274,21 +274,15 @@ Note, please use two for loops to complete this problem
   @param Datatype: Array
   */
 
-var guide = [["Honolulu", "Waikiki"], 
-            ["Tokyo", "Tsukiji Fish Market"], 
-            ["Cairo", "Pyramids"],
-            ["Rome", "Colosseum"]];
+var guide = [["Honolulu", "Waikiki"], ["Tokyo", "Tsukiji Fish Market"], ["Cairo", "Pyramids"], ["Rome", "Colosseum"]];
 
 
 for (var i=0; i<guide.length; i++){
-
-
+   for (var m=0; m<guide[i].length; m++){
+      console.log(guide[i][m]);
+   }
 }
 
-for (var i=0; i<guide.length; i++){
-   
-   console.log(guide[i]);
-}
 
 /* 15) Back to School
 Declare a variable named `currentCohort` and set it's value to be this [array found here](https://gist.github.com/sgnl/e40879b2249e06ca7811).
@@ -300,4 +294,5 @@ The function will iterate through the `cohort` argument and check each student's
 If the `enrolled` property is set to `true` then change that student's `graduated` property to `true`. Otherwise, if `enrolled` is set to `false` then change `enrolled` to `true` leaving `graduated` alone and unchanged.
 Console.log your result.
 */
+
 
