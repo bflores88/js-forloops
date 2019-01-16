@@ -10,6 +10,12 @@ Write a for-loop that will iterate through 20 numbers (starting at 1 and ending 
 */
 
 
+for (var i=1; i<21; i++){
+   var sum = 0;
+   sum+= i;
+   console.log('Now serving ' + sum);
+}
+
 /* 2) Pop Charts
 Write a for-loop that will iterate through the topFive array below and console.log the following message:
 This week's chart buster is: 'Closer.'
@@ -110,6 +116,8 @@ Write a function named `copyArray` which takes two arguments: `originArray` and 
 Inside of this function write a for-loop that will iterate through the contents of the `originArray` and pushes each element of that array into `destinationArray`. Console.log your result.
 */
 
+var valuesArray = [99, 66, 829, 1941, 8, 76];
+
 
 
 /*Final Boss*/
@@ -138,8 +146,6 @@ Write a function that will capitalize the first letter in each word in the phras
 
 var myWay = "i've lived a life that's full, i've traveled each and every highway. but more, much more than this. i did it my way.";
 
-
-
 /* 14) Sightseeing
 Write a function that will loop through the multi-dimensional array and console.log the city and landmark on separate lines.
 Note, please use two for loops to complete this problem
@@ -147,9 +153,21 @@ Note, please use two for loops to complete this problem
   @param Datatype: Array
   */
 
-var guide = [["Honolulu", "Waikiki"], ["Tokyo", "Tsukiji Fish Market"], ["Cairo", "Pyramids"],["Rome", "Colosseum"]];
+var guide = [["Honolulu", "Waikiki"], 
+            ["Tokyo", "Tsukiji Fish Market"], 
+            ["Cairo", "Pyramids"],
+            ["Rome", "Colosseum"]];
 
 
+for (var i=0; i<guide.length; i++){
+
+
+}
+
+for (var i=0; i<guide.length; i++){
+   
+   console.log(guide[i]);
+}
 
 /* 15) Back to School
 Declare a variable named `currentCohort` and set it's value to be this [array found here](https://gist.github.com/sgnl/e40879b2249e06ca7811).
