@@ -130,7 +130,12 @@ var oopsArray = ['turn', , 'down', , 'for', , 'what'];
 
 for (var i=0; i<oopsArray.length; i++){
    if (i%2 !== 0)(
-      oopsArray.splice(i, 1, 'nope')
+
+      //version 1
+      // oopsArray.splice(i, 1, 'nope')
+
+      //version 2
+      oopsArray[i] = 'nope'
    )
 }
 
