@@ -93,7 +93,7 @@ Console.log your results.
 
 var evenNumArr = [];
 
-for (var i=0; i<51; i++){
+for (var i=0; i<100; i++){
    if (i%2 === 0){
       evenNumArr.push(i);
    }
@@ -111,7 +111,7 @@ Console.log your results.
   
 var oddSum = 0;
 
-for (var i=0; i<51; i++){
+for (var i=0; i<100; i++){
    if(i%2 !==0){
       oddSum+= i;
    }
